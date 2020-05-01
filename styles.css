@@ -1,0 +1,29 @@
+:root {
+  --primary-color: #0253E1;
+  --accent-color: #E09902;
+}
+
+.is-orange {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.is-size-18 {
+  font-size: 18px;
+}
+
+.hero {
+  background-color: #8F8CB8;
+  background-image: url('img/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  background-blend-mode: multiply;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 900;
+  color: white;
+  line-height: 60px;
+}
