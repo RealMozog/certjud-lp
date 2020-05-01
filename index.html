@@ -5,7 +5,7 @@
     <title>CertJud - Compra de créditos judiciais</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -13,142 +13,180 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">Você está utilizando um navegador <strong>desatualizado</strong>. Por favor, <a href="https://browsehappy.com/?locale=pt-br">atualize seu navegador</a> para melhorar sua experiência.</p>
     <![endif]-->
+
+    <div id="app">
     
-    <section class="hero is-fullheight">
-      <div class="hero-head">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+      <section class="hero hero-banner is-fullheight">
+        <div class="hero-head">
+          <nav class="navbar" role="navigation" aria-label="main navigation">
 
-          <div class="navbar-brand">
-            <a class="navbar-item" href="https://certjud.com.br">
-              <img src="img/logo-certjud-br.png" width="216">
-            </a>
-
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
-          </div>
-
-          <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-            </div>
-
-            <div class="navbar-end">
-              <a class="navbar-item">
-                Créditos Judiciais
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://certjud.com.br">
+                <img src="img/logo-certjud-br.png" width="216">
               </a>
 
-              <a class="navbar-item">
-                Seja um Advogado Parceiro
-              </a>
-
-              <a class="navbar-item">
-                Quem Somos
-              </a>
-
-              <a class="navbar-item">
-                Notícias
-              </a>
-
-              <a class="navbar-item">
-                Fale Conosco
+              <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
               </a>
             </div>
-          </div>
-        </nav>
-      </div>
 
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="hero-title">
-            Você não precisa<br> 
-            esperar. A CertJud<br>
-            compra seu<br>
-            crédito judicial.
-          </h1>
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+              </div>
 
-          <button class="button is-orange is-rounded is-uppercase is-size-18">Não quero esperar</button>
+              <div class="navbar-end navbar-container">
+                <a class="navbar-item" href="#parceiro">
+                  Seja um Advogado Parceiro
+                </a>
+                
+                <a class="navbar-item" href="#creditos">
+                  Créditos Judiciais
+                </a>
+
+                <a class="navbar-item">
+                  Quem Somos
+                </a>
+
+                <a class="navbar-item">
+                  Notícias
+                </a>
+
+                <a class="navbar-item">
+                  Fale Conosco
+                </a>
+              </div>
+            </div>
+
+          </nav>
         </div>
-      </div>
-    </section>
 
-    <section class="hero is-success is-fullheight">
-      <div class="hero-body">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-two-thirds">
-              <h1 class="title">Seja um advogado parceiro</h1>
-            </div>
-            <div class="column">
-              <h2 class="title">Quero ser um advogado parceiro</h2>
-            </div>
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="hero-title">
+              Você não precisa<br> 
+              esperar. A CertJud<br>
+              compra seu<br>
+              crédito judicial.
+            </h1>
+
+            <button class="button is-orange is-rounded is-uppercase is-size-18" @click="toggleModal()">Não quero esperar</button>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="hero is-fullheight">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">Vantagens na venda de um crédito judicial</h1>
-        </div>
-      </div>
-    </section>
+      <section id="parceiro" class="hero is-fullheight">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns">
+              <div class="column is-two-thirds parceria-bg">
+                <h1 class="title">Seja um advogado parceiro</h1>
 
-    <section class="hero is-fullheight has-background-link">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">A CertJud compra seu crédito judicial de forma rápida e segura</h1>
-        </div>
-      </div>
-    </section>
+                <p>Compramos o crédito judicial do seu cliente e antecipamos os seus honorários.</p>
 
-    <section class="hero is-fullheight">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">Quem somos</h1>
-        </div>
-      </div>
-    </section>
+                <ul>
+                  <li>Seu cliente satisfeito com o processo de cessão do crédito judicial</li>
+                  <li>Você não precisa esperar para receber seus honorários</li>
+                  <li>Você se torna advogado contratado pela Certjud para continuar atuando no processo</li>
+                </ul>
+              </div>
+              <div class="column">
+                <h2 class="title">Quero ser um advogado parceiro</h2>
 
-    <section class="hero is-fullheight">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">Blog CertJud</h1>
-        </div>
-      </div>
-    </section>
-
-    <section class="hero is-fullheight has-background-white-ter">
-      <div class="hero-body">
-        <div class="container">
-          <div class="columns">
-            <div class="column">
-              <h1 class="title">Pra que esperar?</h1>
-            </div>
-            <div class="column">
-              <button class="button is-warning is-rounded is-uppercase">Não quero esperar</button>
+                <form>
+                  <input class="input" type="text" placeholder="Nome completo">
+                  <input class="input" type="text" placeholder="E-mail">
+                  <input class="input" type="text" placeholder="Telefone com DDD">
+                  <input class="input" type="text" placeholder="Cidade">
+                  <input class="input" type="text" placeholder="Número OAB">
+                  <button class="button is-orange is-rounded is-uppercase is-size-18">Seja nosso parceiro</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer class="footer has-background-grey-dark">
-      <div class="columns">
-        <div class="column">
+      <section class="hero is-fullheight">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">Vantagens na venda de um crédito judicial</h1>
+          </div>
+        </div>
+      </section>
 
+      <section class="hero is-fullheight has-background-link">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">A CertJud compra seu crédito judicial de forma rápida e segura</h1>
+          </div>
         </div>
-        <div class="column">
-          
+      </section>
+
+      <section class="hero is-fullheight">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">Quem somos</h1>
+          </div>
         </div>
-        <div class="column">
-          
+      </section>
+
+      <section class="hero is-fullheight">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">Blog CertJud</h1>
+          </div>
         </div>
+      </section>
+
+      <section class="hero is-fullheight has-background-white-ter">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns">
+              <div class="column">
+                <h1 class="title">Pra que esperar?</h1>
+              </div>
+              <div class="column">
+                <button class="button is-warning is-rounded is-uppercase">Não quero esperar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer has-background-grey-dark">
+        <div class="columns">
+          <div class="column">
+
+          </div>
+          <div class="column">
+            
+          </div>
+          <div class="column">
+            
+          </div>
+        </div>
+      </footer>
+
+      <div id="modal" class="modal" style="display:block" v-show="modalIsOpen">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <div class="form">
+            <div class="hero-body">
+              <div class="container">
+                <h1 class="title">Quem somos</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close" @click="toggleModal()"></button>
       </div>
-    </footer>
     
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="scripts/main.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </body>
 </html>

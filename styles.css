@@ -2,28 +2,76 @@
   --primary-color: #0253E1;
   --accent-color: #E09902;
 }
-
-.is-orange {
-  background-color: var(--accent-color);
-  color: white;
+body {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  color: #2E2D33;
+}
+h1, h2, h3, button {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+ul.list {
+  list-style-type: circle;
 }
 
+.button.is-orange {
+  background-color: var(--accent-color);
+  border-color: transparent;
+  color: #fff;
+}
+  .button.is-orange:hover {
+    filter: brightness(0.8);
+  }
 .is-size-18 {
   font-size: 18px;
 }
 
-.hero {
-  background-color: #8F8CB8;
-  background-image: url('img/hero-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: contain;
-  background-blend-mode: multiply;
+.navbar-brand {
+  height: 100px;
 }
+.navbar-container {
+  margin-top: 10px;
+  padding-right: 20px;
+}
+  .navbar-menu .navbar-item {
+    height: 50px;
+  }
+    a.navbar-item {
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+      a.navbar-item:hover {
+        background-color: var(--primary-color);
+        color: white;
+      }
+      .navbar-item img {
+        max-height: unset;
+      }
 
-.hero-title {
-  font-size: 50px;
-  font-weight: 900;
-  color: white;
-  line-height: 60px;
+.hero.is-fullheight .hero-body {
+  align-items: flex-start;
+}
+  .hero-banner {
+    background-color: #8F8CB8;
+    background-image: url(img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 200px bottom;
+    background-size: cover;
+    background-blend-mode: multiply;
+  }
+    .hero-title {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      font-size: 50px;
+      font-weight: 900;
+      color: white;
+      line-height: 60px;
+    }
+
+.parceria-bg {
+  background-image: url('img/parceria.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
 }
