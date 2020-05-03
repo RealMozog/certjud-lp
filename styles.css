@@ -176,29 +176,113 @@ h2.title {
     line-height: 32px;
   }
   .icon-block-container p {
+    margin-top: 8px;
+    margin-bottom: 0;
     font-size: 18px;
     font-weight: 600;
     line-height: 25px;
-    margin-top: 8px;
-    margin-bottom: 0;
   }
 
 /***
   COMPRA
 ***/
 
-
+.light-purple-bg {
+  background-color: #ABBEE6;
+}
+.column:not(:first-child) .art-block-container:before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: -50px;
+  width: 90px;
+  height: 4px;
+  background-color: #78809C;
+}
+.column:not(:last-child) .art-block-container:after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  right: -50px;
+  width: 90px;
+  height: 4px;
+  background-color: #78809C;
+}
+.art-block-container {
+  position: relative;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  text-align: center;
+} 
+  .art-block-container .icon {
+    height: 120px;
+    width: 100%;
+  }
+  .art-block-container h3 {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 41px;
+    color: #78809C;
+  }
+  .art-block-container p {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #2E2D33;
+  }
 
 /***
   QUEM SOMOS
 ***/
 
-
+.testimonial {
+  position: relative;
+  max-width: 70%;
+  margin: 70px auto 0;
+  color: #707070;
+}
+  .testimonial:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(img/aspa.svg) no-repeat;
+    width: 50px;
+    height: 50px;
+  }
+  .testimonial-img {
+    border: solid 3px #707070;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+  .testimonial-name {
+    margin-bottom: 4px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .testimonial-profession {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .testimonial-text {
+    font-size: 20px;
+    line-height: 27px;
+  }
 
 /***
   BLOG
 ***/
 
+#blog {
+  border-top: solid 2px #E6E6E6;
+}
 
 
 /***
