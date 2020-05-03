@@ -16,50 +16,52 @@
 
     <div id="app">
     
-      <section class="hero hero-banner is-fullheight">
+      <section class="hero is-fullheight purple-bg">
         <div class="hero-head">
-          <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
 
-            <div class="navbar-brand">
-              <a class="navbar-item" href="https://certjud.com.br">
-                <img src="img/logo-certjud-br.png" width="216">
-              </a>
-
-              <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
-            </div>
-
-            <div id="navbarBasicExample" class="navbar-menu">
-              <div class="navbar-start">
-              </div>
-
-              <div class="navbar-end navbar-container">
-                <a class="navbar-item" href="#parceiro">
-                  Seja um Advogado Parceiro
-                </a>
-                
-                <a class="navbar-item" href="#creditos">
-                  Créditos Judiciais
+              <div class="navbar-brand">
+                <a class="navbar-item" href="https://certjud.com.br">
+                  <img src="img/logo-certjud-br.png" width="216">
                 </a>
 
-                <a class="navbar-item">
-                  Quem Somos
-                </a>
-
-                <a class="navbar-item">
-                  Notícias
-                </a>
-
-                <a class="navbar-item">
-                  Fale Conosco
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
                 </a>
               </div>
-            </div>
 
-          </nav>
+              <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                </div>
+
+                <div class="navbar-end navbar-container">
+                  <a class="navbar-item" href="#parceiro">
+                    Seja um Advogado Parceiro
+                  </a>
+                  
+                  <a class="navbar-item" href="#creditos">
+                    Créditos Judiciais
+                  </a>
+
+                  <a class="navbar-item">
+                    Quem Somos
+                  </a>
+
+                  <a class="navbar-item">
+                    Notícias
+                  </a>
+
+                  <a class="navbar-item">
+                    Fale Conosco
+                  </a>
+                </div>
+              </div>
+
+            </nav>
+          </div>
         </div>
 
         <div class="hero-body">
@@ -74,24 +76,28 @@
             <button class="button is-orange is-rounded is-uppercase is-size-18" @click="toggleModal()">Não quero esperar</button>
           </div>
         </div>
+
+        <div class="hero-banner"></div>
       </section>
 
       <section id="parceiro" class="hero is-fullheight">
         <div class="hero-body">
           <div class="container">
             <div class="columns">
-              <div class="column is-two-thirds parceria-bg">
-                <h1 class="title">Seja um advogado parceiro</h1>
+              <div class="column is-three-fifths parceria-bg">
+                <div>
+                  <h1 class="title">Seja um advogado parceiro</h1>
 
-                <p>Compramos o crédito judicial do seu cliente e antecipamos os seus honorários.</p>
+                  <p>Compramos o crédito judicial do seu cliente e antecipamos os seus honorários.</p>
 
-                <ul>
-                  <li>Seu cliente satisfeito com o processo de cessão do crédito judicial</li>
-                  <li>Você não precisa esperar para receber seus honorários</li>
-                  <li>Você se torna advogado contratado pela Certjud para continuar atuando no processo</li>
-                </ul>
+                  <ul class="disc-list">
+                    <li>Seu cliente satisfeito com o processo de cessão do crédito judicial</li>
+                    <li>Você não precisa esperar para receber seus honorários</li>
+                    <li>Você se torna advogado contratado pela Certjud para continuar atuando no processo</li>
+                  </ul>
+                </div>
               </div>
-              <div class="column">
+              <div class="column pl-60">
                 <h2 class="title">Quero ser um advogado parceiro</h2>
 
                 <form>
@@ -111,7 +117,63 @@
       <section class="hero is-fullheight">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title">Vantagens na venda de um crédito judicial</h1>
+            <h1 class="title">Vantagens na venda de<br>um crédito judicial</h1>
+
+            <p>Vender seu crédito judicial é uma boa opção para lidar com a longa espera e garantir o dinheiro de forma antecipada</p>
+
+            <div class="columns">
+
+              <div class="column">
+                <div class="icon-block-container">
+                  <div class="icon">
+                    <img src="img/icons/grana.png" alt="uma pilha de dinheiro">
+                  </div>
+                  <h3>Dinheiro imediato</h3>
+                  <p>Receba o dinheiro em poucos dias, sem ter que esperar</p>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="icon-block-container">
+                  <div class="icon">
+                    <img src="img/icons/cadeado.png" alt="um cadeado">
+                  </div>
+                  <h3>Segurança</h3>
+                  <p>Processo transparente, respeitando eventuais honorários advocatícios</p>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="icon-block-container">
+                  <div class="icon">
+                    <img src="img/icons/cronometro.png" alt="um cronômetro">
+                  </div>
+                  <h3>Rapidez</h3>
+                  <p>Não espere o tempo da justiça</p>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="icon-block-container">
+                  <div class="icon">
+                    <img src="img/icons/alvo.png" alt="uma seta no alvo">
+                  </div>
+                  <h3>Realize</h3>
+                  <p>Tenha capital para investir, sanar dívidas ou realizar sonhos</p>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="icon-block-container">
+                  <div class="icon">
+                    <img src="img/icons/escudo.png" alt="um escudo indicando tudo ok">
+                  </div>
+                  <h3>Risco zero</h3>
+                  <p>Operação normatizada pela Constituição Federal</p>
+                </div>
+              </div>
+            
+            </div>
           </div>
         </div>
       </section>
