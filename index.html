@@ -5,7 +5,7 @@
     <title>CertJud - Compra de créditos judiciais</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -178,23 +178,92 @@
         </div>
       </section>
 
-      <section class="hero is-fullheight has-background-link">
+      <section class="hero is-fullheight light-purple-bg">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title">A CertJud compra seu crédito judicial de forma rápida e segura</h1>
+            <h1 class="title">A CertJud compra seu crédito judicial<br>de forma rápida e segura</h1>
+
+            <p>Entenda as etapas do processo de venda do crédito judicial</p>
+
+            <div class="columns">
+
+              <div class="column">
+                <div class="art-block-container">
+                  <div class="icon">
+                    <img src="img/icons/documentos.png" alt="documentos">
+                  </div>
+                  <h3>1</h3>
+                  <p>Envie sua documentação completa</p>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="art-block-container">
+                  <div class="icon">
+                    <img src="img/icons/analise.png" alt="lupa analisando documento">
+                  </div>
+                  <h3>2</h3>
+                  <p>Análise e aprovação em até 48 horas</p>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="art-block-container">
+                  <div class="icon">
+                    <img src="img/icons/compra.png" alt="assinando documento">
+                  </div>
+                  <h3>3</h3>
+                  <p>Formalização do processo de compra</p>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="art-block-container">
+                  <div class="icon">
+                    <img src="img/icons/pagamento.png" alt="recebendo pagamento em dinheiro">
+                  </div>
+                  <h3>4</h3>
+                  <p>Seu pagamento sai em até 24 horas</p>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="hero is-fullheight">
+      <section id="quem" class="hero is-fullheight">
         <div class="hero-body">
           <div class="container">
             <h1 class="title">Quem somos</h1>
+
+            <p>A Certjud é uma empresa referência na cessão de cessão de créditos judiciais. Contamos com uma equipe altamente qualificada para atender às demandas dos clientes e dos nossos advogados parceiros.</p>
+
+            <p>Com “xxx tempo de atuação no mercado”, negociamos o “valor XXXX” em créditos judiciais pendentes de recebimento de empresas privadas e entes públicos, ajudando as pessoas que precisam de liquidez imediata e sem burocracia mas encontram na morosidade da justiça um obstáculo para acesso ao capital.</p>
+
+            <div class="testimonials-slide">
+
+              <div class="testimonial" v-for="(testemunho, index) in testimonials" :key="index">
+                <div class="columns">
+                  <div class="column is-one-fifth">
+                    <img class="testimonial-img" :src="'img/' + testemunho.foto" :alt="testemunho.nome">
+                  </div>
+                  <div class="column">
+                    <div class="testimonial-name">{{ testemunho.nome }}</div>
+                    <div class="testimonial-profession">{{ testemunho.profissao }}</div>
+                    <div class="testimonial-text">
+                      {{ testemunho.texto }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="hero is-fullheight">
+      <section id="blog" class="hero is-fullheight">
         <div class="hero-body">
           <div class="container">
             <h1 class="title">Blog CertJud</h1>
