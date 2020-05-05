@@ -376,3 +376,14 @@ footer.footer {
     margin-bottom: 0;
     font-size: 20px;
   }
+
+/***
+  MODAL
+***/
+
+.modal-content {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  margin-top: 35px;
+}
