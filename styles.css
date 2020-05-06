@@ -382,9 +382,29 @@ footer.footer {
   MODAL
 ***/
 
+.modal-background {
+  background-color: rgba(10,10,10,.4);
+}
 .modal-content {
-  background-color: white;
+  background-color: #8F8CB8;
   width: 90%;
   height: 90%;
   margin-top: 35px;
+}
+.form {
+  background-color: var(--primary-color);
+  padding: 16px;
+  min-height: 300px;
+  border-radius: 4px;
+}
+.modal .title {
+  color: white;
+}
+.modal .hero-body {
+  padding: 5rem;
+}
+.modal p {
+  color: white;
+  max-width: 90%;
+  line-height: 1.5;
 }
