@@ -32,7 +32,7 @@ ul.disc-list {
 }
 
 /***
-  CLASSES
+  HELPERS
 ***/
 
 .button.is-orange {
@@ -47,22 +47,25 @@ ul.disc-list {
 .is-size-18 {
   font-size: 18px;
 }
-
 .pl-60 {
   padding-left: 60px;
 }
-
 h1.title {
   font-size: 40px;
   font-weight: 900;
   line-height: 55px;
 }
-
 h2.title {
   font-size: 32px;
   line-height: 42px;
   text-align: center;
   margin-bottom: 54px !important;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
 }
 
 /***
@@ -283,14 +286,125 @@ h2.title {
 #blog {
   border-top: solid 2px #E6E6E6;
 }
-
+  .post-blocks-container {
+    margin-top: 77px;
+    margin-bottom: 77px;
+  }
+    .post-blocks img {
+      height: 225px;
+    }
+    .post-blocks h3 {
+      margin-top: 8px;
+      font-family: 'Nunito';
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 28px;
+    }
 
 /***
   CTA
 ***/
 
-
+#cta {
+  background-color: #F9F8FF;
+}
+  .cta-container {
+    background-color: var(--primary-color);
+    padding: 80px;
+  }
+    .contact-container h1.title {
+      color: white;
+      line-height: 1.2;
+    }
+    .contact-icons-container {
+      margin-top: 80px;
+      padding-bottom: 80px;
+    }
+      .contact-icons-container .column {
+        text-align: center;
+      }
+      .contact-icon {
+        height: 70px;
+      }
+      .contact-icons-container h3 {
+        font-size: 24px;
+        line-height: 33px;
+        margin-top: 24px;
+      }
+      .contact-icons-container p {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0;
+      }
 
 /***
   FOOTER
 ***/
+
+footer.footer {
+  padding: 50px;
+  background-color: #464555;
+  color: white;
+}
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .social {
+    display: flex;
+  }
+    .social img {
+      margin-left: 24px;
+    }
+  footer li {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+  footer .address {
+    margin-top: 0;
+    margin-left: 110px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  .copy {
+    margin-top: 60px;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+/***
+  MODAL
+***/
+
+.modal-background {
+  background-color: rgba(10,10,10,.4);
+}
+.modal-content {
+  background-color: #8F8CB8;
+  width: 90%;
+  height: 90%;
+  margin-top: 35px;
+}
+.form {
+  background-color: var(--primary-color);
+  padding: 16px;
+  min-height: 300px;
+  border-radius: 4px;
+}
+.modal .title {
+  color: white;
+}
+.modal .hero-body {
+  padding: 5rem;
+}
+.modal p {
+  color: white;
+  max-width: 90%;
+  line-height: 1.5;
+}
