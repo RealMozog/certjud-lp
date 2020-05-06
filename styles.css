@@ -72,11 +72,18 @@ h2.title {
   NAVBAR
 ***/
 
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  transition: top 0.3s;
+  background-color: transparent;
+}
 .navbar-brand {
   height: 100px;
 }
 .navbar-container {
-  margin-top: 10px;
+  margin-top: 20px;
   padding-right: 20px;
 }
   .navbar-menu .navbar-item {
@@ -101,6 +108,7 @@ h2.title {
 ***/
 
 .hero.is-fullheight .hero-head {
+  height: 100px;
   z-index: 2;
 }
 .hero.is-fullheight .hero-body {
@@ -243,10 +251,35 @@ h2.title {
   QUEM SOMOS
 ***/
 
+.icons-block-container {
+  margin-top: 20px;
+  text-align: center;
+}
+  .icons-block-container .icon {
+    height: 90px;
+    width: 100%;
+  }
+  .icons-block-container h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+.testimonials-container {
+  width: 806px;
+  height: 150px;
+  margin: 90px auto 0;
+  overflow: hidden;
+}
+.testimonials-slide {
+  position: relative;
+  display: flex;
+  animation: slide 15s ease-in-out infinite;
+}
 .testimonial {
   position: relative;
-  max-width: 70%;
-  margin: 70px auto 0;
+  min-width: 806px;
+  margin-right: 100px;
   color: #707070;
 }
   .testimonial:after {
@@ -382,6 +415,16 @@ footer.footer {
   MODAL
 ***/
 
+.modal {
+  display: block;
+  transform: translateY(-1000px);
+  opacity: 0;
+  transition: all .5s ease;
+}
+  .modal.show {
+    transform: translateY(0);
+    opacity: 1;
+  }
 .modal-background {
   background-color: rgba(10,10,10,.4);
 }
@@ -408,3 +451,14 @@ footer.footer {
   max-width: 90%;
   line-height: 1.5;
 }
+
+/** Animations **/
+
+@keyframes slide {
+  0% { left: 0 }
+  40% { left: 0 }
+  50% { left: -906px }
+  90% { left: -906px }
+  100% { left: 0 }
+}
+
