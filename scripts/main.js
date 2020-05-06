@@ -12,6 +12,12 @@ var app = new Vue({
         texto: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et",
         foto: "fakeuser.jpg"
       },
+      {
+        nome: "Alaíde Almeida Ferraz",
+        profissao: "Aposentada",
+        texto: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.",
+        foto: "fakeuser.jpg"
+      },
     ],
     posts: []
   },
