@@ -239,8 +239,8 @@ h2.title {
   content: "";
   position: absolute;
   top: 60px;
-  left: -50px;
-  width: 90px;
+  left: -72px;
+  width: 115px;
   height: 4px;
   background-color: #78809C;
 }
@@ -248,8 +248,8 @@ h2.title {
   content: "";
   position: absolute;
   top: 60px;
-  right: -50px;
-  width: 90px;
+  right: -72px;
+  width: 115px;
   height: 4px;
   background-color: #78809C;
 }
