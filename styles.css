@@ -3,7 +3,7 @@
 ***/
 
 :root {
-  --primary-color: #0253E1;
+  --primary-color: #0d56d9;
   --accent-color: #E09902;
 }
 
@@ -151,6 +151,10 @@ h2.title {
 }
   #parceiro .hero-body .container {
     display: flex;
+  }
+  #parceiro p {
+    margin-top: 20px;
+    margin-bottom: 0;
   }
   .parceria-bg {
     display: flex;
