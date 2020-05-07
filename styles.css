@@ -102,6 +102,11 @@ h2.title {
       .navbar-item img {
         max-height: unset;
       }
+@media screen and (max-width: 1023px) {
+  .navbar-menu.is-active {
+    background-color: rgba(0,0,0,.85);
+  }
+}
 
 /***
   HERO
@@ -141,6 +146,21 @@ h2.title {
       color: white;
       line-height: 60px;
     }
+@media screen and (max-width: 1023px) {
+  .hero-banner {
+    display: none;
+  }
+  .hero-title {
+    margin-top: 0;
+    text-align: center;
+  }
+  .button {
+    margin: 0 auto;
+    display: block;
+    float: none;
+  }
+}
+
 
 /***
   PARCEIRO
@@ -168,10 +188,20 @@ h2.title {
     margin-bottom: 16px;
     height: 47px;
   }
-  form button {
-    margin-top: 24px;
-    float: right;
+  form .button {
+    display: block;
+    margin: 24px auto 0;
   }
+
+@media screen and (max-width: 1023px) {
+  .parceria-bg {
+    background-image: none;
+  }
+
+  .pl-60 {
+    padding-left: 0;
+  }
+}
 
 /***
   VANTAGENS
@@ -250,6 +280,13 @@ h2.title {
     line-height: 28px;
     color: #2E2D33;
   }
+
+@media screen and (max-width: 1023px) {
+  .column:not(:first-child) .art-block-container:before,
+  .column:not(:last-child) .art-block-container:after {
+    display: none;
+  }
+}
 
 /***
   QUEM SOMOS
@@ -374,6 +411,12 @@ h2.title {
         margin: 0;
       }
 
+@media screen and (max-width: 1023px) {
+  .contacts {
+    padding: 0 20px;
+  }
+}
+
 /***
   FOOTER
 ***/
@@ -414,6 +457,14 @@ footer.footer {
     margin-bottom: 0;
     font-size: 20px;
   }
+
+@media screen and (max-width: 1023px) {
+  footer .address {
+    margin-top: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+}
 
 /***
   MODAL
