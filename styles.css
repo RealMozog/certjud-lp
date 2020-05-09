@@ -12,11 +12,11 @@
 ***/
 
 body {
-  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   color: #2E2D33;
 }
 h1, h2, h3, button {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 p, li {
   font-size: 24px;
@@ -274,7 +274,7 @@ h2.title {
   .art-block-container p {
     margin-top: 8px;
     margin-bottom: 0;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -369,7 +369,7 @@ h2.title {
     }
     .post-blocks h3 {
       margin-top: 8px;
-      font-family: 'Nunito';
+      font-family: 'Montserrat';
       font-size: 24px;
       font-weight: 600;
       line-height: 28px;

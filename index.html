@@ -5,7 +5,7 @@
     <title>CertJud - Compra de créditos judiciais</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -548,11 +548,11 @@
 
                   <div class="column">
                     <div class="form">
-                      <form class="form">
-                        <input class="input" type="text" placeholder="Nome completo">
-                        <input class="input" type="text" placeholder="E-mail">
-                        <input class="input" type="text" placeholder="Telefone com DDD">
-                        <button class="button is-orange is-rounded is-uppercase is-size-18">Nós ligamos pra você</button>
+                      <form class="form" action="client-mailer.php" method="POST">
+                        <input class="input" type="text" name="nome" placeholder="Nome completo">
+                        <input class="input" type="text" name="mail" placeholder="E-mail">
+                        <input class="input" type="text" name="fone" placeholder="Telefone com DDD">
+                        <button class="button is-orange is-rounded is-uppercase is-size-18" name="envia">Nós ligamos pra você</button>
                       </form>
                     </div>
                   </div>
