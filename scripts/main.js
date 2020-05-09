@@ -1,7 +1,9 @@
+let ax = axios.create({
+  baseURL: 'https://certjud.com.br/wp-json/wp/v2/'
+});
+
 var app = new Vue({
   el: '#app',
-
-  //const axios = require('axios').default
 
   data: {
     modalIsOpen: false,
@@ -19,7 +21,8 @@ var app = new Vue({
         foto: "fakeuser.jpg"
       },
     ],
-    posts: []
+    posts: [],
+    isLoading: false
   },
 
   methods: {
@@ -28,11 +31,12 @@ var app = new Vue({
     }
   },
 
-  mounted: {
-    // axios.get('http://cristianismobiblico.net/wp-json/wp/v2/posts')
-    //   .then(function (response) {
-    //     //this.posts = response
-    //     console.log(response);
-    //   })
+  mounted() {
+    this.isLoading = true
+    ax.get('posts?_embed&per_page=3')
+      .then(response => {
+        this.posts = response.data;
+        this.isLoading = false
+      })
   }
 })

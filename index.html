@@ -116,7 +116,7 @@
           <div class="container">
             <h1 class="title">Vantagens na venda de<br>um crédito judicial</h1>
 
-            <p>Vender seu crédito judicial é uma boa opção para lidar com a longa espera e garantir o dinheiro de forma antecipada</p>
+            <p>Vender seu crédito judicial é uma boa opção para lidar com a longa espera da justiça e garantir o dinheiro de forma antecipada</p>
 
             <div class="columns">
 
@@ -136,7 +136,7 @@
                     <img src="img/icons/cadeado.png" alt="um cadeado">
                   </div>
                   <h3>Segurança</h3>
-                  <p>Processo transparente, respeitando eventuais honorários advocatícios</p>
+                  <p>Processo transparente, respeitando honorários advocatícios</p>
                 </div>
               </div>
 
@@ -156,7 +156,7 @@
                     <img src="img/icons/alvo.png" alt="uma seta no alvo">
                   </div>
                   <h3>Realize</h3>
-                  <p>Tenha capital para investir, sanar dívidas ou realizar sonhos</p>
+                  <p>Tenha dinheiro para investir, sanar dívidas ou realizar sonhos</p>
                 </div>
               </div>
 
@@ -234,7 +234,7 @@
           <div class="container">
             <h1 class="title">Quem somos</h1>
 
-            <p>A Certjud é uma empresa referência na cessão de cessão de créditos judiciais. Esses créditos são aqueles decorrentes de uma decisão judicial da qual não cabe mais recurso, ou seja, é um direito líquido e certo, mas que pela morosidade da justiça sua transformação em dinheiro pode levar muito tempo.</p>
+            <p>A Certjud é uma empresa referência na cessão de créditos judiciais. Esses créditos são aqueles decorrentes de uma decisão judicial da qual não cabe mais recurso, ou seja, é um direito líquido e certo, mas que pela morosidade da justiça sua transformação em dinheiro pode levar muito tempo.</p>
 
             <p>Confira abaixo os créditos judiciais que compramos:</p>
 
@@ -409,26 +409,17 @@
             <h1 class="title">Blog CertJud</h1>
 
             <div class="post-blocks-container">
+              <div class="is-loading" v-if="isLoading"></div>
               <div class="columns">
 
-                <div class="column">
+                <div class="column" v-for="(post, index) in posts" :key="index">
                   <div class="post-blocks">
-                    <img src="img/fakepost.jpg">
-                    <h3>Título da postagem</h3>
-                  </div>
-                </div>
-
-                <div class="column">
-                  <div class="post-blocks">
-                    <img src="img/fakepost.jpg">
-                    <h3>Título da postagem</h3>
-                  </div>
-                </div>
-
-                <div class="column">
-                  <div class="post-blocks">
-                    <img src="img/fakepost.jpg">
-                    <h3>Título da postagem</h3>
+                    <img :src="post._embedded['wp:featuredmedia']['0'].source_url">
+                    <h3>
+                      <a :href="post.link" target="_blank">
+                        {{ post.title.rendered }}
+                      </a>
+                    </h3>
                   </div>
                 </div>
 
@@ -578,9 +569,9 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="scripts/main.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts/main.js"></script>
     <script>
       /** Hide Navbar on Scroll **/
       var prevScrollpos = window.pageYOffset;
