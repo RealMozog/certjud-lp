@@ -22,12 +22,17 @@ var app = new Vue({
       },
     ],
     posts: [],
-    isLoading: false
+    isLoading: false,
+    chatMinimized: true
   },
 
   methods: {
     toggleModal() {
       this.modalIsOpen = !this.modalIsOpen
+    },
+
+    toggleChat() {
+      this.chatMinimized = !this.chatMinimized
     }
   },
 

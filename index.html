@@ -54,6 +54,10 @@
               <a class="navbar-item" href="#contato">
                 Fale Conosco
               </a>
+
+              <span class="navbar-item fone-number">
+                (71) 3052 3460
+              </span>
             </div>
           </div>
         </div>
@@ -67,10 +71,10 @@
           <div class="container">
             <h1 class="hero-title">
               Você não precisa <br>
-              esperar.<br>
-              Compramos seu crédito <br>
-              judicial pelo melhor <br>
-              preço e menor tempo.
+              esperar. Compramos <br>
+              seu crédito judicial <br>
+              pelo melhor preço<br>
+              e menor tempo.
             </h1>
 
             <button class="button is-orange is-rounded is-uppercase is-size-18" @click="toggleModal()">Não quero esperar</button>
@@ -414,7 +418,9 @@
 
                 <div class="column" v-for="(post, index) in posts" :key="index">
                   <div class="post-blocks">
-                    <img :src="post._embedded['wp:featuredmedia']['0'].source_url">
+                    <div class="post-block-img">
+                      <img :src="post._embedded['wp:featuredmedia']['0'].source_url">
+                    </div>
                     <h3>
                       <a :href="post.link" target="_blank">
                         {{ post.title.rendered }}
@@ -468,8 +474,8 @@
                         <img src="img/icons/telefone.png">
                       </div>
                       <h3><em>Telefone</em></h3>
-                      <p>Envie suas dúvidas</p>
-                      <p><strong>comercial@certjud.com.br</strong></p>
+                      <p>Entre em contato</p>
+                      <p><strong>(71) 3052 3460</strong></p>
                     </div>
 
                     <div class="column">
@@ -477,8 +483,8 @@
                         <img src="img/icons/chat.png">
                       </div>
                       <h3><em>Chat</em></h3>
-                      <p>Envie suas dúvidas</p>
-                      <p><strong>comercial@certjud.com.br</strong></p>
+                      <p>Receba auxílio imediato</p>
+                      <a @click="toggleChat"><strong>Iniciar conversa</strong></a>
                     </div>
                   </div>
                 </div>
@@ -564,6 +570,18 @@
           </div>
         </div>
         <button class="modal-close is-large" aria-label="close" @click="toggleModal()"></button>
+      </div>
+
+      <div class="chat-window" :class="{ 'minimized' : chatMinimized }">
+        <div class="chat-header">
+          Chat Certjud
+          <a @click="toggleChat()">
+            <i class="fas fa-minus"></i>
+          </a>
+        </div>
+        <div class="chat-body">
+          <iframe src="https://links.collect.chat/5cf91e517e286248f65871b6" width="100%" height="400" frameborder="0"></iframe>
+        </div>
       </div>
     
     </div>

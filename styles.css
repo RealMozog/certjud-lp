@@ -110,12 +110,16 @@ h2.title {
   .navbar-menu .navbar-item {
     height: 50px;
   }
-    a.navbar-item {
+    .navbar-item {
       color: white;
       font-size: 14px;
       font-weight: 600;
       text-transform: uppercase;
     }
+      .navbar-item.fone-number {
+        font-size: 20px;
+        font-weight: 700;
+      }
       a.navbar-item:hover {
         background-color: var(--primary-color);
         color: white;
@@ -314,8 +318,9 @@ h2.title {
 ***/
 
 .icons-block-container {
-  margin-top: 20px;
+  margin: 20px auto 0;
   text-align: center;
+  max-width: 90%;
 }
   .icons-block-container .icon {
     height: 90px;
@@ -385,9 +390,14 @@ h2.title {
     margin-top: 77px;
     margin-bottom: 77px;
   }
-    .post-blocks img {
-      height: 225px;
+    .post-block-img {
+      width: 100%;
+      height: 290px;
+      overflow: hidden;
     }
+      .post-blocks img {
+        height: 100%;
+      }
     .post-blocks h3 {
       margin-top: 8px;
       font-family: 'siteFont';
@@ -446,7 +456,8 @@ h2.title {
         line-height: 33px;
         margin-top: 24px;
       }
-      .contact-icons-container p {
+      .contact-icons-container p,
+      .contact-icons-container a {
         font-size: 20px;
         line-height: 30px;
         margin: 0;
@@ -508,7 +519,7 @@ footer.footer {
 }
 
 /***
-  MODAL
+  MODALS & ETC
 ***/
 
 .modal {
@@ -546,6 +557,36 @@ footer.footer {
   color: white;
   max-width: 90%;
   line-height: 1.5;
+}
+
+.chat-window {
+  position: fixed;
+  bottom: 0;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 450px;
+  background-color: white;
+  border: solid 1px lightgrey;
+  border-radius: 10px 10px 0 0;
+  transition: all .5s ease;
+  z-index: 100000;
+}
+  .chat-window.minimized {
+    transform: translateY(405px);
+  }
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  padding: 10px;
+  font-weight: 600;
+  border-bottom: solid 1px lightgrey;
+}
+.chat-body {
+  flex: 1;
+  overflow-y: hidden;
 }
 
 /** Animations **/
