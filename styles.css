@@ -11,12 +11,33 @@
   RESETS
 ***/
 
+@font-face {
+  font-family: "siteFont";
+  src: url("fonts/AirbnbCerealBook.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "siteFont";
+  src: url("fonts/AirbnbCerealMedium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "siteFont";
+  src: url("fonts/AirbnbCerealBold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "siteFont";
+  src: url("fonts/AirbnbCerealBlack.ttf");
+  font-weight: 900;
+}
+
 body {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: 'siteFont', Arial, Helvetica, sans-serif;
   color: #2E2D33;
 }
 h1, h2, h3, button {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: 'siteFont', Arial, Helvetica, sans-serif;
 }
 p, li {
   font-size: 24px;
@@ -274,7 +295,7 @@ h2.title {
   .art-block-container p {
     margin-top: 8px;
     margin-bottom: 0;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-family: 'siteFont', Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -369,7 +390,7 @@ h2.title {
     }
     .post-blocks h3 {
       margin-top: 8px;
-      font-family: 'Montserrat';
+      font-family: 'siteFont';
       font-size: 24px;
       font-weight: 600;
       line-height: 28px;
