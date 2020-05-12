@@ -51,6 +51,9 @@ ul.disc-list {
   list-style-type: disc;
   padding-left: 25px;
 }
+.navbar-burger span {
+  height: 2px;
+}
 
 /***
   HELPERS
@@ -262,7 +265,15 @@ h2.title {
   #parceiro {
     background-image: none;
   }
-
+  .form-container {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 0;
+    padding: 20px;
+  }
+    .is-size-18 {
+      font-size: 16px;
+    }
   .pl-60 {
     padding-left: 0;
   }
