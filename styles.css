@@ -219,8 +219,8 @@ h2.title {
 #parceiro {
   background-image: url('img/adv-bg.jpg');
   background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
+  background-position: right bottom;
+  background-size: contain;
 }
 #parceiro .hero-body {
   flex-direction: column;
