@@ -8,11 +8,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P8B98DK');</script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
     <!--[if lt IE 7]>
       <p class="browsehappy">Você está utilizando um navegador <strong>desatualizado</strong>. Por favor, <a href="https://browsehappy.com/?locale=pt-br">atualize seu navegador</a> para melhorar sua experiência.</p>
     <![endif]-->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8B98DK"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
 
     <div id="app">
 
@@ -87,20 +100,15 @@
       <section id="parceiro" class="hero is-fullheight">
         <div class="hero-body" style="padding-bottom: 12px">
           <div class="container">
-            <div class="columns">
-              <div class="column is-three-fifths parceria-bg">
-                <div>
-                  <h1 class="title">Advogado, antecipe seus honorários!</h1>
-
-                  <p>Você não precisa esperar!</p>
-                  <p>Antecipamos seus honorários advocatícios de maneira segura, rápida e sem burocracia.</p>
-                  <p>Compramos o crédito judicial do seu cliente pelo melhor preço.</p>
-
-                </div>
-              </div>
-              <div class="column pl-60">
+            <div class="left-container">
+              <h1 class="title">Advogado, antecipe seus honorários!</h1>
+              <p>Você não precisa esperar!</p>
+              <ul class="disc-list">
+                <li>Antecipamos seus honorários advocatícios de maneira segura, rápida e sem burocracia.</li>
+                <li>Compramos o crédito judicial do seu cliente pelo melhor preço.</li>
+              </ul>
+              <div class="form-container">
                 <h2 class="title">Quero um contato da área comercial</h2>
-
                 <form>
                   <input class="input" type="text" placeholder="Nome completo">
                   <input class="input" type="text" placeholder="E-mail">
@@ -115,16 +123,16 @@
         </div>
       </section>
 
-      <section class="hero is-fullheight">
+      <section id="vantagens" class="hero is-fullheight">
         <div class="hero-body">
-          <div class="container">
+          <div class="container fat">
             <h1 class="title">Vantagens na venda de<br>um crédito judicial</h1>
 
-            <p>Vender seu crédito judicial é uma boa opção para lidar com a longa espera da justiça e garantir o dinheiro de forma antecipada</p>
+            <p class="text-center">Vender seu crédito judicial é uma boa opção para lidar com a longa espera da justiça e garantir o dinheiro de forma antecipada</p>
 
             <div class="columns">
 
-              <div class="column">
+              <div class="column margin-top">
                 <div class="icon-block-container">
                   <div class="icon">
                     <img src="img/icons/grana.png" alt="uma pilha de dinheiro">
@@ -181,12 +189,12 @@
 
       <section id="creditos" class="hero is-fullheight light-purple-bg">
         <div class="hero-body">
-          <div class="container">
+          <div class="container fat">
             <h1 class="title">Compramos seu crédito judicial<br>de forma rápida e segura</h1>
 
-            <p>Entenda as etapas gerais do processo de venda do crédito judicial</p>
+            <p class="text-center">Entenda as etapas gerais do processo de venda do crédito judicial</p>
 
-            <div class="columns">
+            <div class="columns margin-top">
 
               <div class="column">
                 <div class="art-block-container">
@@ -235,14 +243,14 @@
 
       <section id="quem" class="hero is-fullheight">
         <div class="hero-body">
-          <div class="container">
+          <div class="container fat">
             <h1 class="title">Quem somos</h1>
 
-            <p>A Certjud é uma empresa referência na cessão de créditos judiciais. Esses créditos são aqueles decorrentes de uma decisão judicial da qual não cabe mais recurso, ou seja, é um direito líquido e certo, mas que pela morosidade da justiça sua transformação em dinheiro pode levar muito tempo.</p>
+            <p class="text-center">A Certjud é uma empresa referência na cessão de créditos judiciais. Esses créditos são aqueles decorrentes de uma decisão judicial da qual não cabe mais recurso, ou seja, é um direito líquido e certo, mas que pela morosidade da justiça sua transformação em dinheiro pode levar muito tempo.</p>
 
-            <p>Confira abaixo os créditos judiciais que compramos:</p>
+            <p class="text-center">Confira abaixo os créditos judiciais que compramos:</p>
 
-            <div class="columns">
+            <div class="columns margin-top">
 
               <div class="column">
                 <div class="icons-block-container">
@@ -409,12 +417,12 @@
 
       <section id="blog" class="hero">
         <div class="hero-body">
-          <div class="container">
+          <div class="container fat">
             <h1 class="title">Blog CertJud</h1>
 
             <div class="post-blocks-container">
               <div class="is-loading" v-if="isLoading"></div>
-              <div class="columns">
+              <div class="columns margin-top">
 
                 <div class="column" v-for="(post, index) in posts" :key="index">
                   <div class="post-blocks">
@@ -440,7 +448,9 @@
 
             <div class="cta-container">
               <div class="container">
+
                 <div class="columns">
+
                   <div class="column">
                     <h1 class="title">Você não precisa esperar</h1>
                   </div>
@@ -448,6 +458,7 @@
                     <button class="button is-orange is-rounded is-uppercase is-size-18">Não quero esperar</button>
                   </div>
                 </div>
+                
               </div>
             </div>
 
@@ -586,16 +597,6 @@
     
     </div>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166089291-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-166089291-1');
-    </script>
-    
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
