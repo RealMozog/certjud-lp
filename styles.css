@@ -591,6 +591,17 @@ footer.footer {
     margin-left: 0;
     text-align: center;
   }
+  .footer-logo {
+    align-items: center;
+  }
+  .social {
+    width: 60%;
+    margin-top: 30px;
+    justify-content: space-around;
+  }
+    .social img {
+      margin-left: 0;
+    }
 }
 
 /***
@@ -685,6 +696,24 @@ footer.footer {
     line-height: 1.4;
     margin: 0;
   }
+
+@media screen and (max-width: 1023px) {
+  .modal-content, 
+  .server-msg {
+    width: 90%;
+  }
+  .cta-form .hero-body {
+    padding: 20px;
+  }
+  .modal p {
+    text-align: center;
+    max-width: auto;
+  }
+  .cta-form .form {
+    padding: 10px;
+    min-height: auto;
+  }
+}
 
 /** Animations **/
 
