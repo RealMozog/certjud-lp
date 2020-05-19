@@ -1,5 +1,5 @@
 let ax = axios.create({
-  baseURL: 'https://certjud.com.br/wp-json/wp/v2/'
+  baseURL: 'https://certjud.com.br/blog/wp-json/wp/v2/'
 });
 
 var app = new Vue({
@@ -23,7 +23,10 @@ var app = new Vue({
     ],
     posts: [],
     isLoading: false,
-    chatMinimized: true
+    chatMinimized: true,
+    showFormResponse: false,
+    advResponse: false,
+    clientResponse: false
   },
 
   methods: {
@@ -33,6 +36,16 @@ var app = new Vue({
 
     toggleChat() {
       this.chatMinimized = !this.chatMinimized
+    },
+
+    sendPartner() {
+      this.showFormResponse = true
+      this.advResponse = true
+    },
+
+    sendClient() {
+      this.showFormResponse = true
+      this.clientResponse = true
     }
   },
 

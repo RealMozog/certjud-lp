@@ -13,7 +13,7 @@
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-P8B98DK');</script>
+    })(window,document,'script','dataLayer','GTM-P8G4SNS');</script>
     <!-- End Google Tag Manager -->
   </head>
   <body>
@@ -22,18 +22,35 @@
     <![endif]-->
 
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8B98DK"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8G4SNS"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
 
     <div id="app">
 
+      <?php 
+        $param = $_GET['sent'];
+        if ($param === 'partner') { 
+      ?>
+      <div class="server-msg">
+        <p>Informações enviadas com sucesso! Em breve nossa equipe entrará em contato.</p>
+      </div>
+      <?php 
+        } else if ($param === 'client') { 
+      ?>
+      <div class="server-msg">
+        <p>Informações enviadas com sucesso! Nossa equipe comercial entrará em contato pra te ajudar a realizar essa venda! Os próximos passos são a avaliação do seu crédito judicial e posterior apresentação de proposta.</p>
+      </div>
+      <?php 
+        } 
+      ?>
+
       <nav id="navbar" class="navbar" role="navigation" aria-label="main navigation">
         <div class="container">
           <div class="navbar-brand">
             <a class="navbar-item" href="#home">
-              <img src="img/logo-certjud-br.png" width="216">
+              <img src="img/logo-certjud-br.svg" width="216">
             </a>
 
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -109,13 +126,15 @@
               </ul>
               <div class="form-container">
                 <h2 class="title">Quero um contato da área comercial</h2>
-                <form>
-                  <input class="input" type="text" placeholder="Nome completo">
-                  <input class="input" type="text" placeholder="E-mail">
-                  <input class="input" type="text" placeholder="Telefone com DDD">
-                  <input class="input" type="text" placeholder="Cidade">
-                  <input class="input" type="text" placeholder="Número OAB (obrigatório)">
-                  <button class="button is-orange is-rounded is-uppercase is-size-18">Quero mais informações</button>
+                <form id="advForm" action="https://certjud.com.br/?sent=partner" method="POST">
+                  <input class="input" type="text" name="nome" placeholder="Nome completo" required>
+                  <input class="input" type="email" name="mail" placeholder="E-mail" required>
+                  <input class="input" type="tel" name="tel" placeholder="Telefone com DDD" required>
+                  <input class="input" type="text" name="cidade" placeholder="Cidade" required>
+                  <input class="input" type="number" name="oab" placeholder="Número OAB (obrigatório)" required>
+                  <button type="submit" name="envia-adv" class="button is-orange is-rounded is-uppercase is-size-18">
+                    Quero mais informações
+                  </button>
                 </form>
               </div>
             </div>
@@ -455,7 +474,7 @@
                     <h1 class="title">Você não precisa esperar</h1>
                   </div>
                   <div class="column is-two-fifths text-right">
-                    <button class="button is-orange is-rounded is-uppercase is-size-18">Não quero esperar</button>
+                    <button class="button is-orange is-rounded is-uppercase is-size-18" @click="toggleModal()">Não quero esperar</button>
                   </div>
                 </div>
                 
@@ -512,22 +531,38 @@
 
           <div class="columns">
             <div class="column footer-logo">
-              <img src="img/logo-certjud-br.png" alt="Certjud">
+              <img src="img/logo-certjud-br.svg" alt="Certjud">
 
               <div class="social">
-                <img src="img/icons/icon-facebook.svg" alt="facebook">
-                <img src="img/icons/icon-instagram.svg" alt="instagram">
-                <img src="img/icons/icon-linkedin.svg" alt="linkedin">
+                <a href="https://www.facebook.com/CertJud-110583463985789" target="_blank">
+                  <img src="img/icons/icon-facebook.svg" alt="facebook">
+                </a>
+                <a href="https://www.instagram.com/cert.jud" target="_blank">
+                  <img src="img/icons/icon-instagram.svg" alt="instagram">
+                </a>
+                <a href="#" target="_blank">
+                  <img src="img/icons/icon-linkedin.svg" alt="linkedin">
+                </a>
               </div>
             </div>
 
             <div class="column">
               <ul class="text-center">
-                <li>créditos judiciais</li>
-                <li>Como funciona</li>
-                <li>seja um advogado parceiro</li>
-                <li>notícias</li>
-                <li>fale conosco</li>
+                <li>
+                  <a href="#creditos">Créditos Judiciais</a>
+                </li>
+                <li>
+                  <a href="#creditos">Como funciona</a>
+                </li>
+                <li>
+                  <a href="#parceiro">Seja um advogado parceiro</a>
+                </li>
+                <li>
+                  <a href="#blog">Notícias</a>
+                </li>
+                <li>
+                  <a href="#contato">Fale Conosco</a>
+                </li>
               </ul>
             </div>
 
@@ -565,11 +600,11 @@
 
                   <div class="column">
                     <div class="form">
-                      <form class="form" action="client-mailer.php" method="POST">
-                        <input class="input" type="text" name="nome" placeholder="Nome completo">
-                        <input class="input" type="text" name="mail" placeholder="E-mail">
-                        <input class="input" type="text" name="fone" placeholder="Telefone com DDD">
-                        <button class="button is-orange is-rounded is-uppercase is-size-18" name="envia">Nós ligamos pra você</button>
+                      <form class="form" action="https://certjud.com.br/?sent=client" method="POST">
+                        <input class="input" type="text" name="nome" placeholder="Nome completo" required>
+                        <input class="input" type="email" name="mail" placeholder="E-mail" required>
+                        <input class="input" type="tel" name="fone" placeholder="Telefone com DDD" required>
+                        <button type="submit" class="button is-orange is-rounded is-uppercase is-size-18" name="envia">Nós ligamos pra você</button>
                       </form>
                     </div>
                   </div>
@@ -643,5 +678,6 @@
         });
       });
     </script>
+    <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/77daf5f5-c38a-4a9d-a4b0-7c5810a0cdd2-loader.js" ></script>
   </body>
 </html>
