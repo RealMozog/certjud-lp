@@ -540,7 +540,7 @@
                 <a href="https://www.instagram.com/cert.jud" target="_blank">
                   <img src="img/icons/icon-instagram.svg" alt="instagram">
                 </a>
-                <a href="#" target="_blank">
+                <a href="http://linkedin.com/in/certjud-compra-de-cr%C3%A9ditos-judiciais-3258a41a9" target="_blank">
                   <img src="img/icons/icon-linkedin.svg" alt="linkedin">
                 </a>
               </div>

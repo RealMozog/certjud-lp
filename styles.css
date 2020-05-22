@@ -702,6 +702,10 @@ footer.footer {
   .server-msg {
     width: 90%;
   }
+  .modal-content {
+    max-height: 100vh;
+    height: 85vh;
+  }
   .cta-form .hero-body {
     padding: 20px;
   }
