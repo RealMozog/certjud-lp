@@ -550,11 +550,12 @@ footer.footer {
   .footer-logo {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: flex-start;
   }
   .social {
     display: flex;
+    margin-top: 50px;
   }
     .social img {
       margin-left: 24px;
@@ -573,11 +574,12 @@ footer.footer {
     }
   footer .address {
     margin-top: 0;
+    margin-bottom: 10px;
     margin-left: 110px;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 28px;
+    line-height: 20px;
   }
   .copy {
     margin-top: 60px;
@@ -648,7 +650,7 @@ footer.footer {
 .chat-window {
   position: fixed;
   bottom: 0;
-  right: 50px;
+  right: 110px;
   display: flex;
   flex-direction: column;
   width: 300px;

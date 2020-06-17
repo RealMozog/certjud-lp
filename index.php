@@ -2,6 +2,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="img/favicon.png">
     <title>CertJud - Compra de créditos judiciais</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -84,10 +85,6 @@
               <a class="navbar-item" href="#contato">
                 Fale Conosco
               </a>
-
-              <span class="navbar-item fone-number">
-                (71) 3052 3460
-              </span>
             </div>
           </div>
         </div>
@@ -568,11 +565,19 @@
 
             <div class="column">
               <address class="address">
-                Avenida Estados Unidos, n° 04<br>
+                Av. Estados Unidos, 04<br>
                 Edf. Visconde de Cayru<br>
                 Sala 304 - Comércio<br>
-                Salvador/BA. <br>
+                Salvador/BA<br>
                 CEP 40.010-020
+              </address>
+              <address class="address">
+                Av. Prefeito Osmar Cunha, 183<br>
+                Edf. Ceisa Center<br>
+                Sala 183, Bloco B - Centro<br>
+                Florianópolis/SC<br>
+                CEP: 88015-100<br>
+                Tel: (48) 3084-0407 | 99134-2526
               </address>
             </div>
           </div>
@@ -617,7 +622,7 @@
         </div>
         <button class="modal-close is-large" aria-label="close" @click="toggleModal()"></button>
       </div>
-
+    
       <div class="chat-window" :class="{ 'minimized' : chatMinimized }">
         <div class="chat-header">
           Chat Certjud
