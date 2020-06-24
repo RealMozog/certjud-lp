@@ -6,6 +6,7 @@ if (isset($_POST['envia'])) {
   $nome = $_POST['nome'];
   $email = $_POST['mail'];
   $telefone = $_POST['fone'];
+  $tipo_processo = $_POST['tipoprocesso']
   //====================================================
   
   //REMETENTE --> ESTE EMAIL TEM QUE SER VALIDO DO DOMINIO

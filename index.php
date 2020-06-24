@@ -97,12 +97,10 @@
         <div class="hero-body">
           <div class="container">
             <h1 class="hero-title">
-              Você não precisa <br>
-              esperar. Compramos <br>
-              seu crédito judicial <br>
-              pelo melhor preço<br>
-              e menor tempo.
+            Quero vender meu <br> processo
             </h1>
+
+            <p style="color: white">Você ganhou o processo e <br> ainda não recebeu, solicite agora <br> a sua proposta de antecipação</p>
 
             <button class="button is-orange is-rounded is-uppercase is-size-18" @click="toggleModal()">Não quero esperar</button>
           </div>
@@ -116,11 +114,7 @@
           <div class="container">
             <div class="left-container">
               <h1 class="title">Advogado, antecipe seus honorários!</h1>
-              <p>Você não precisa esperar!</p>
-              <ul class="disc-list">
-                <li>Antecipamos seus honorários advocatícios de maneira segura, rápida e sem burocracia.</li>
-                <li>Compramos o crédito judicial do seu cliente pelo melhor preço.</li>
-              </ul>
+              <p>Para que esperar? Antecipamos seus honorários de maneira rápida e sem burocracia. </p>
               <div class="form-container">
                 <h2 class="title">Quero um contato da área comercial</h2>
                 <form id="advForm" action="https://certjud.com.br/?sent=partner" method="POST">
@@ -129,6 +123,15 @@
                   <input class="input phone_with_ddd" type="tel" name="tel" placeholder="Telefone com DDD" required>
                   <input class="input" type="text" name="cidade" placeholder="Cidade" required>
                   <input class="input" type="number" name="oab" placeholder="Número OAB (obrigatório)" required>
+                  <select class="input" name="tipoprocesso" required>
+                    <option value="" disabled selected>Tipo do processo</option>
+                    <option>Precatório Federal</option>
+                    <option>Processo contra Bancos e/ou Instituições Financeiras</option>
+                    <option>Processo contra prestadoras de serviços de energia, gás, água e telefonia</option>
+                    <option>Processo trabalhista</option>
+                    <option>Processo contra empresas de grande porte</option>
+                  </select>
+   
                   <button type="submit" name="envia-adv" class="button is-orange is-rounded is-uppercase is-size-18">
                     Quero mais informações
                   </button>
@@ -144,7 +147,8 @@
           <div class="container fat">
             <h1 class="title">Vantagens na venda de<br>um crédito judicial</h1>
 
-            <p class="text-center">Vender seu crédito judicial é uma boa opção para lidar com a longa espera da justiça e garantir o dinheiro de forma antecipada</p>
+            <p class="text-center">Vender seu crédito judicial é uma boa opção para lidar com a longa espera da justiça 
+              e garantir o dinheiro de forma antecipada.</p>
 
             <div class="columns">
 
@@ -154,7 +158,7 @@
                     <img src="img/icons/grana.png" alt="uma pilha de dinheiro">
                   </div>
                   <h3>Dinheiro imediato</h3>
-                  <p>Receba o dinheiro em poucos dias, sem ter que esperar</p>
+                  <p>Receba o dinheiro em poucos dias, sem ter que esperar.</p>
                 </div>
               </div>
 
@@ -164,7 +168,7 @@
                     <img src="img/icons/cadeado.png" alt="um cadeado">
                   </div>
                   <h3>Segurança</h3>
-                  <p>Processo transparente, respeitando honorários advocatícios</p>
+                  <p>Processo transparente, respeitando honorários advocatícios.</p>
                 </div>
               </div>
 
@@ -174,7 +178,7 @@
                     <img src="img/icons/cronometro.png" alt="um cronômetro">
                   </div>
                   <h3>Rapidez</h3>
-                  <p>Não espere o tempo da justiça</p>
+                  <p>Não espere o tempo da justiça.</p>
                 </div>
               </div>
 
@@ -184,7 +188,7 @@
                     <img src="img/icons/alvo.png" alt="uma seta no alvo">
                   </div>
                   <h3>Realize</h3>
-                  <p>Tenha dinheiro para investir, sanar dívidas ou realizar sonhos</p>
+                  <p>Tenha dinheiro para investir, sanar dívidas ou realizar sonhos.</p>
                 </div>
               </div>
 
@@ -194,7 +198,7 @@
                     <img src="img/icons/escudo.png" alt="um escudo indicando tudo ok">
                   </div>
                   <h3>Risco zero</h3>
-                  <p>Operação normatizada pela Constituição Federal</p>
+                  <p>Operação normatizada pela Constituição Federal.</p>
                 </div>
               </div>
             
@@ -208,7 +212,7 @@
           <div class="container fat">
             <h1 class="title">Compramos seu crédito judicial<br>de forma rápida e segura</h1>
 
-            <p class="text-center">Entenda as etapas gerais do processo de venda do crédito judicial</p>
+            <p class="text-center">Entenda as etapas gerais do processo de venda do crédito judicial:</p>
 
             <div class="columns margin-top">
 
@@ -262,7 +266,7 @@
           <div class="container fat">
             <h1 class="title">Quem somos</h1>
 
-            <p class="text-center">A Certjud é uma empresa referência na cessão de créditos judiciais. Esses créditos são aqueles decorrentes de uma decisão judicial da qual não cabe mais recurso, ou seja, é um direito líquido e certo, mas que pela morosidade da justiça sua transformação em dinheiro pode levar muito tempo.</p>
+            <p class="text-center">A CertJud é uma empresa especializada em cessão de créditos judiciais. Esses créditos são aqueles decorrentes de uma decisão judicial para a qual não cabe mais recurso, ou seja, o crédito judicial é um direito líquido e certo, contudo, devido à morosidade da justiça, sua transformação em dinheiro pode levar muito tempo.</p>
 
             <p class="text-center">Confira abaixo os créditos judiciais que compramos:</p>
 
@@ -481,9 +485,9 @@
             <div class="contacts">
               <div class="container">
 
-                <p>Dúvidas? Nosso time de especialistas está preparado para mais orientações sobre o processo de negociação e pagamento</p>
+                <p>Dúvidas? Nosso time de especialistas está preparado para mais orientações sobre o processo de negociação e pagamento.</p>
                 
-                <p>Oferecemos sempre a melhor proposta pelo seu crédito judicial</p>
+                <p>Oferecemos sempre a melhor proposta pelo seu crédito judicial.</p>
 
                 <div class="contact-icons-container">
                   <div class="columns">
@@ -586,6 +590,7 @@
         </div>
       </footer>
 
+      <!-- HIDDEN MODAL -->
       <div id="modal" class="modal" :class="{ 'show' : modalIsOpen }">
         
         <div class="modal-background"></div>
@@ -598,7 +603,7 @@
                 <div class="columns">
 
                   <div class="column is-three-fifths">
-                    <h1 class="title">Quero vender meu <br>crédito judicial</h1>
+                    <h1 class="title">Quero vender meu <br>processo</h1>
 
                     <p>Após recebermos suas informações,  entraremos em contato em até 24h para sabermos mais informações do seu processo.</p>
                   </div>
@@ -609,6 +614,14 @@
                         <input class="input" type="text" name="nome" placeholder="Nome completo" required>
                         <input class="input" type="email" name="mail" placeholder="E-mail" required>
                         <input class="input phone_with_ddd" type="tel" name="fone" placeholder="Telefone com DDD" required>
+                        <select class="input" name="tipoprocesso" required>
+                          <option value="" disabled selected>Tipo do processo</option>
+                          <option>Precatório Federal</option>
+                          <option>Processo contra Bancos e/ou Instituições Financeiras</option>
+                          <option>Processo contra prestadoras de serviços de energia, gás, água e telefonia</option>
+                          <option>Processo trabalhista</option>
+                          <option>Processo contra empresas de grande porte</option>
+                        </select>
                         <button type="submit" class="button is-orange is-rounded is-uppercase is-size-18" name="envia">Nós ligamos pra você</button>
                       </form>
                     </div>
