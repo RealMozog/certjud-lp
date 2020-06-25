@@ -12,6 +12,7 @@ if (isset($_POST['envia-adv'])) {
   $telefone = $_POST['tel'];
   $cidade = $_POST['cidade'];
   $oab = $_POST['oab'];
+  $tipo_processo = $_POST['tipoprocesso']
   //====================================================
   
   //REMETENTE --> ESTE EMAIL TEM QUE SER VALIDO DO DOMINIO
